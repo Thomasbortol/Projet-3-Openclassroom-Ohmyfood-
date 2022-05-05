@@ -6,14 +6,53 @@
 }
 body{
     margin: 0px;
+    font-family: "Roboto", "sans-serif";
 }
+
+/* Header */
 
 header{
     text-align: center;
     font-family: "Shrikhand", "sans-serif";
-    box-shadow: 0px 5px 3px lightgray;
+    box-shadow: 0px 3px 5px lightgray;
+    position: relative;
+}
+header h1{
+    margin: 10px 0px 4px 0px;
 }
 
-p{
-    font-family: "Roboto", "sans-serif";
+/* section1 paris */
+
+.paris{
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: smaller;
 }
+
+.paris i{
+    padding: 10px 20px 10px 0px;
+    font-size: x-large;
+}
+
+/*  section 1 explorer */
+
+.explorer{
+    text-align: center;
+}
+
+.explorer button{
+    border: none;
+    color: white;
+    padding: 15px 30px 15px 30px;
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom,#FF79DA, #9356DC);
+    box-shadow: 4px 4px 10px 0px rgba(132,132,132,0.67);
+    transition: all 200ms;
+}
+
+.explorer button:hover{
+    transform: scale(1.02);
+}
+
