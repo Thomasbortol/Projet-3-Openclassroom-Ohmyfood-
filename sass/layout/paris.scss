@@ -1,0 +1,11 @@
+.paris{
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: smaller;
+    & i{
+    padding: 10px 20px 10px 0px;
+    font-size: x-large;
+}
+}

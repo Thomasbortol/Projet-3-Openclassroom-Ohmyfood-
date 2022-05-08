@@ -1,0 +1,22 @@
+.explorer {
+  text-align: center;
+}
+
+.explorer button {
+  border: none;
+  color: white;
+  padding: 15px 30px 15px 30px;
+  border-radius: 25px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  -webkit-box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
+          box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.explorer button:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+/*# sourceMappingURL=explorer.css.map */
