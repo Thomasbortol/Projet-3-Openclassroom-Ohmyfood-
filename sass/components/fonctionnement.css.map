@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AACI,eADW,CACT,EAAE,CAAA;EACA,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,GAAG,EAAE,IAAI;CAIZ;;AAHG,MAAM,EAAE,SAAS,EAAE,KAAK;EALhC,AACI,eADW,CACT,EAAE,CAAA;IAKI,cAAc,EAAE,MAAM;GAE7B;;;AARL,AASI,eATW,CAST,EAAE,CAAA;EACA,gBAAgB,EAAE,OAAO;EACzB,OAAO,EAAE,SAAS;EAClB,SAAS,EAAE,CAAC;EACZ,aAAa,EAAE,IAAI;ECdvB,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,GAAG,CAAC,yBAAsB;CDgBlD",
+    "sources": [
+        "fonctionnement.scss",
+        "../variable/box-shadow.scss"
+    ],
+    "names": [],
+    "file": "fonctionnement.css"
+}

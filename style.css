@@ -10,6 +10,10 @@ body {
   font-family: "Roboto", "sans-serif";
 }
 
+main {
+  padding: 0px 15px;
+}
+
 header {
   text-align: center;
   font-family: "Shrikhand", "sans-serif";
@@ -52,14 +56,43 @@ header h1 {
   border-radius: 25px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
-  -webkit-box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
-          box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
   -webkit-transition: all 200ms;
   transition: all 200ms;
+  -webkit-box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
+          box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
 }
 
 .explorer button:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+}
+
+.fonctionnement ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media (max-width: 780px) {
+  .fonctionnement ol {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.fonctionnement li {
+  background-color: #f2f2f2;
+  padding: 15px 10px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 15px;
+  -webkit-box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
+          box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
 }
 /*# sourceMappingURL=style.css.map */
