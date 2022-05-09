@@ -3,7 +3,7 @@
     "mappings": "AAEA,AAAA,SAAS,CAAA;EACL,UAAU,EAAE,MAAM;CAarB;;AAdD,AAEI,SAFK,CAEH,MAAM,CAAA;EACR,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,KAAK;EACZ,OAAO,EAAE,mBAAmB;EAC5B,aAAa,EAAE,IAAI;EACnB,gBAAgB,EAAE,4CAA2C;EAC7D,UAAU,EAAE,SAAS;ECTrB,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,GAAG,CAAC,yBAAsB;CDWlD;;AAVL,AAWI,SAXK,CAWH,MAAM,AAAA,MAAM,CAAA;EACd,SAAS,EAAE,WAAW;CACrB",
     "sources": [
         "explorer.scss",
-        "../variable/box-shadow.scss"
+        "../utils/box-shadow.scss"
     ],
     "names": [],
     "file": "explorer.css"
