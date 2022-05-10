@@ -23,12 +23,19 @@
           flex-grow: 1;
   border-radius: 15px;
   list-style-type: none;
+  font-weight: bold;
   -webkit-box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
           box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
 }
 
 .fonctionnement i {
   margin-right: 10px;
+  color: gray;
+}
+
+.fonctionnement i:hover {
+  color: #9356DC;
+  /* Pas bon ici hover QUE sur l'image */
 }
 
 .fonctionnement .list {
@@ -49,5 +56,6 @@
   position: absolute;
   bottom: 15px;
   left: -10px;
+  font-weight: normal;
 }
 /*# sourceMappingURL=fonctionnement.css.map */

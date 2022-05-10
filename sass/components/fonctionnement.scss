@@ -15,10 +15,15 @@
         flex-grow: 1;
         border-radius: 15px;
         list-style-type: none;
+        font-weight: bold;
         @include shadowbase;
     }
     & i{
         margin-right: 10px;
+        color: gray;
+        &:hover{
+            color: #9356DC; /* Pas bon ici hover QUE sur l'image */
+        }
     }
     & .list{
         background-color: #9356DC;
@@ -32,6 +37,7 @@
         position: absolute;
         bottom: 15px;
         left: -10px;
+        font-weight: normal;
     }
 }
 
