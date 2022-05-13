@@ -11,6 +11,9 @@
     transition: all 200ms;
     @include shadowbase;
     }
+    & p{
+        margin: 10px;
+    }
     & button:hover{
     transform: scale(1.02);
     }

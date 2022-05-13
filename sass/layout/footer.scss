@@ -1,0 +1,19 @@
+footer{
+    background-color: #353535;
+    color: white;
+    padding: 20px 0 10px 20px;
+    & h3{
+        font-weight: lighter;
+        font-family: "Shrikhand", "sans-serif";
+    }
+    & ul{
+        padding-left: 1px;
+    }
+    & li{
+        list-style-type: none;
+        padding: 5px 0px;
+    }
+    & i{
+        margin-right: 5px;
+    }
+}
