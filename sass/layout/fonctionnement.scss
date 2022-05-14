@@ -1,4 +1,4 @@
-@import "../utils/box-shadow.scss";
+@import "../utils/mixins.scss";
 
 .fonctionnement{
     & ol{
@@ -10,7 +10,7 @@
     }
     & li{
         position: relative;
-        background-color: #f2f2f2;
+        @include greybackcolor;
         padding: 15px 20px;
         flex-grow: 1;
         border-radius: 15px;

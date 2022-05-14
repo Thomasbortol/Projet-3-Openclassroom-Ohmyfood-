@@ -1,5 +1,7 @@
+@import "../utils/mixins.scss";
+
 .paris{
-    background-color: #f2f2f2;
+    @include greybackcolor;
     display: flex;
     align-items: center;
     justify-content: center;

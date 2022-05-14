@@ -102,13 +102,13 @@
   right: 0px;
   top: 1px;
   color: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  -webkit-transition: all 200ms;
-  transition: all 200ms;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
 }
 
 .section3 .fa-solid:hover {

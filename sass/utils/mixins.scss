@@ -1,0 +1,11 @@
+@mixin shadowbase {
+    box-shadow: 4px 4px 10px 0px rgba(132,132,132,0.67);
+}
+
+@mixin greybackcolor {
+    background-color: #f2f2f2;
+}
+
+@mixin gradient{
+    background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+}

@@ -1,0 +1,135 @@
+@charset "UTF-8";
+.bannière img {
+  display: block;
+  width: 100%;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.main-restaurant {
+  position: relative;
+  margin-top: -35px;
+  border-radius: 30px 30px 0 0;
+  background-color: white;
+}
+
+.main-restaurant h2 {
+  margin: 0;
+  padding: 15px;
+  font-family: "Shrikhand", "sans-serif";
+  font-weight: lighter;
+  background-color: #f2f2f2;
+  border-radius: 30px 30px 0 0;
+}
+
+.main-restaurant .heart {
+  font-size: 25px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.main-restaurant .heart .fa-solid {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  color: transparent;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  -webkit-transition: all 500ms;
+  transition: all 500ms;
+}
+
+.main-restaurant .heart .fa-solid:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.menus-restaurant {
+  background-color: #f2f2f2;
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+@media (max-width: 850px) {
+  .menus-restaurant {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.menus-restaurant .repas {
+  border: 1px solid green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  padding: 0 10px;
+}
+
+.menus-restaurant .repas .plat {
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
+          box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.menus-restaurant .repas .plat .unique {
+  border: 1px solid blue;
+  padding: 5px;
+}
+
+.menus-restaurant .repas .plat .unique h4 {
+  margin: 0;
+}
+
+.commande {
+  text-align: center;
+  padding: 30px;
+  background-color: #f2f2f2;
+}
+
+.commande button {
+  border: none;
+  color: white;
+  padding: 15px 30px 15px 30px;
+  border-radius: 25px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
+  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  -webkit-box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
+          box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
+}
+
+.commande button:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+/*# sourceMappingURL=restaurant.css.map */

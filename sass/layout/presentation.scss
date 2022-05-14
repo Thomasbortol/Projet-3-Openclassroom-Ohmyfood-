@@ -1,7 +1,7 @@
-@import "../utils/box-shadow.scss";
+@import "../utils/mixins.scss";
 
 .section3{
-    background-color: #f2f2f2;
+    @include greybackcolor;
     & h2{
         padding: 20px 0 0 20px;
     }
@@ -48,7 +48,7 @@
     }
 & .texte{
         position: relative;
-        padding-right: 30px;
+        padding-right: 30px;       
     }    
 & .titre{
         padding-left: 15px;
@@ -63,18 +63,18 @@
     font-size: 25px;
     position: absolute;
     right: 20px;
-    top: 10px;
+    top: 10px; 
     }
     & .fa-solid{
         position: absolute;
         right: 0px;
         top: 1px;
         color: transparent;
-        background-image: linear-gradient(to bottom,#FF79DA, #9356DC);
+        @include gradient;
         background-clip: text;
         -webkit-background-clip: text;
         opacity: 0;
-        transition: all 200ms;
+        transition: all 500ms;
         &:hover{
             opacity: 1;
             transform: scale(1.2);

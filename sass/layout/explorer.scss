@@ -1,13 +1,17 @@
-@import "../utils/box-shadow.scss";
+@import "../utils/mixins.scss";
 
+.section1{
+    @include greybackcolor;
+}
 .explorer{
     text-align: center;
+    padding-bottom: 20px;
     & button{
     border: none;
     color: white;
     padding: 15px 30px 15px 30px;
     border-radius: 25px;
-    background-image: linear-gradient(to bottom,#FF79DA, #9356DC);
+    @include gradient;
     transition: all 200ms;
     @include shadowbase;
     }

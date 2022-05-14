@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,MAAM,CAAA;EACF,gBAAgB,EAAE,OAAO;EACzB,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;EACvB,SAAS,EAAE,OAAO;CAKrB;;AAVD,AAMI,MANE,CAMA,CAAC,CAAA;EACH,OAAO,EAAE,kBAAkB;EAC3B,SAAS,EAAE,OAAO;CACrB",
+    "mappings": "AAEA,AAAA,MAAM,CAAA;ECGF,gBAAgB,EAAE,OAAO;EDDzB,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;EACvB,SAAS,EAAE,OAAO;CAKrB;;AAVD,AAMI,MANE,CAMA,CAAC,CAAA;EACH,OAAO,EAAE,kBAAkB;EAC3B,SAAS,EAAE,OAAO;CACrB",
     "sources": [
-        "paris.scss"
+        "paris.scss",
+        "../utils/mixins.scss"
     ],
     "names": [],
     "file": "paris.css"
