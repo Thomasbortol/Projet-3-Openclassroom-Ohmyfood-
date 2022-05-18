@@ -294,6 +294,14 @@ footer i {
   margin-right: 5px;
 }
 
+body {
+  background-color: #f2f2f2;
+}
+
+body header {
+  background-color: white;
+}
+
 .bannière img {
   display: block;
   width: 100%;
@@ -303,6 +311,8 @@ footer i {
 }
 
 .main-restaurant {
+  max-width: 600px;
+  margin: auto;
   position: relative;
   margin-top: -35px;
   border-radius: 30px 30px 0 0;
@@ -346,24 +356,25 @@ footer i {
 }
 
 .menus-restaurant {
+  max-width: 600px;
   background-color: #f2f2f2;
   border: 1px solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
   gap: 30px;
 }
 
-@media (max-width: 850px) {
-  .menus-restaurant {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-
 .menus-restaurant .repas {
+  width: 100%;
   border: 1px solid green;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -373,9 +384,6 @@ footer i {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 10px;
-  -ms-flex-preferred-size: 33%;
-      flex-basis: 33%;
-  padding: 0 10px;
 }
 
 .menus-restaurant .repas .plat {
@@ -392,16 +400,25 @@ footer i {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px;
 }
 
 .menus-restaurant .repas .plat .unique {
   border: 1px solid blue;
-  padding: 5px;
+  padding: 10px;
 }
 
 .menus-restaurant .repas .plat .unique h4 {
   margin: 0;
+}
+
+.menus-restaurant .repas .plat .prix {
+  margin-left: auto;
+  padding: 0 10px 10px 0;
+}
+
+.menus-restaurant .repas .plat .check {
+  background-color: #99e2d0;
+  padding: 21px;
 }
 
 .commande {
