@@ -9,3 +9,15 @@
 @mixin gradient{
     background-image: linear-gradient(to bottom, #ff79da, #9356dc);
 }
+
+
+@mixin tournante{
+    @keyframes tournante{
+        0% {
+            transform: rotate(-280deg);
+        }
+        100%{
+            transform: rotate(0);
+        }
+    }
+}

@@ -1,9 +1,9 @@
 @charset "UTF-8";
-body {
+#bodyrestaurant {
   background-color: #f2f2f2;
 }
 
-body header {
+#bodyrestaurant header {
   background-color: white;
 }
 
@@ -76,6 +76,7 @@ body header {
           align-items: center;
   margin: auto;
   gap: 30px;
+  padding: 10px;
 }
 
 .menus-restaurant .repas {
@@ -105,25 +106,72 @@ body header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-height: 61px;
+  overflow: hidden;
 }
 
 .menus-restaurant .repas .plat .unique {
   border: 1px solid blue;
-  padding: 10px;
+  padding: 10px 20px 10px 10px;
+  overflow: hidden;
 }
 
-.menus-restaurant .repas .plat .unique h4 {
+.menus-restaurant .repas .plat .unique h4, .menus-restaurant .repas .plat .unique p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   margin: 0;
 }
 
 .menus-restaurant .repas .plat .prix {
+  font-weight: bold;
   margin-left: auto;
-  padding: 0 10px 10px 0;
+  padding: 0 10px 10px 10px;
 }
 
 .menus-restaurant .repas .plat .check {
   background-color: #99e2d0;
-  padding: 21px;
+  color: white;
+  padding: 20px;
+  border-radius: 0 15px 15px 0;
+  margin-right: -61px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.menus-restaurant .repas .plat .check i {
+  font-size: larger;
+}
+
+.menus-restaurant .repas .plat:hover .check {
+  margin-right: 0px;
+}
+
+.menus-restaurant .repas .plat:hover i {
+  -webkit-animation: tournante 0.5s ease-in-out;
+          animation: tournante 0.5s ease-in-out;
+}
+
+@-webkit-keyframes tournante {
+  0% {
+    -webkit-transform: rotate(-280deg);
+            transform: rotate(-280deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+}
+
+@keyframes tournante {
+  0% {
+    -webkit-transform: rotate(-280deg);
+            transform: rotate(-280deg);
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
 }
 
 .commande {
@@ -146,6 +194,7 @@ body header {
 }
 
 .commande button:hover {
+  opacity: 0.8;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }

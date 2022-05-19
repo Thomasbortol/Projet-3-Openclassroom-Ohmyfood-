@@ -1,6 +1,6 @@
 @import "../utils/mixins.scss";
 
-body{
+#bodyrestaurant{
     @include greybackcolor;
     & header{
         background-color: white;
@@ -64,6 +64,7 @@ body{
     align-items: center;
     margin: auto;
     gap: 30px;
+    padding: 10px;
     
     & .repas{
     width: 100%;
@@ -77,21 +78,44 @@ body{
         @include shadowbase;
         display: flex;
         align-items: flex-end;
-        justify-content: space-between;       
+        justify-content: space-between; 
+        max-height: 61px;
+        overflow: hidden;
             & .unique{
             border: 1px solid blue;
-            padding: 10px;
-                & h4{
+            padding: 10px 20px 10px 10px;
+            overflow: hidden;
+                & h4, p{
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
                 margin: 0;
                 }
             }
             & .prix{
+            font-weight: bold;
             margin-left: auto;
-            padding: 0 10px 10px 0;
+            padding: 0 10px 10px 10px;
             }
             & .check{
                 background-color: #99e2d0;
-                padding: 21px;
+                color: white;
+                padding: 20px;
+                border-radius: 0 15px 15px 0;
+                margin-right: -61px;
+                transition: all 0.5s;
+                & i{
+                font-size: larger;
+                }
+            }
+            &:hover {
+                .check{
+                margin-right: 0px;
+            }
+            & i{
+            @include tournante;
+            animation: tournante 0.5s ease-in-out;
+            }
             }
         }
     }
@@ -112,6 +136,7 @@ body{
     @include shadowbase;
 }
 & button:hover{
+    opacity: 0.8;
     transform: scale(1.02);
 }
 }
