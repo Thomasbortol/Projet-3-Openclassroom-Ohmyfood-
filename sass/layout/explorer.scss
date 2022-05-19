@@ -14,6 +14,7 @@
     @include gradient;
     transition: all 200ms;
     @include shadowbase;
+    cursor: pointer;
     }
     & p{
         margin: 10px;

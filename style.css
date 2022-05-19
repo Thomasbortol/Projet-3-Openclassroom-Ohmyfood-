@@ -79,6 +79,7 @@ header h1 {
   transition: all 200ms;
   -webkit-box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
           box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
+  cursor: pointer;
 }
 
 .explorer p {
@@ -388,6 +389,23 @@ footer i {
   gap: 10px;
 }
 
+.menus-restaurant .repas h3 {
+  padding-bottom: 5px;
+  text-transform: uppercase;
+  font-weight: 400;
+  position: relative;
+}
+
+.menus-restaurant .repas h3::after {
+  content: "";
+  position: absolute;
+  background-color: #99e2d0;
+  height: 3px;
+  width: 50px;
+  top: 25px;
+  left: 1px;
+}
+
 .menus-restaurant .repas .plat {
   background-color: white;
   border-radius: 15px;
@@ -404,6 +422,7 @@ footer i {
           justify-content: space-between;
   max-height: 61px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .menus-restaurant .repas .plat .unique {
@@ -487,6 +506,7 @@ footer i {
   transition: all 200ms;
   -webkit-box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
           box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
+  cursor: pointer;
 }
 
 .commande button:hover {
