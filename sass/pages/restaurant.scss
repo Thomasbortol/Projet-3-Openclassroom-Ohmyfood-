@@ -86,7 +86,7 @@
         }
         }
         & .plat{
-        @for $i from 1 through 4{
+        @for $i from 1 through 5{
         &:nth-child(#{$i}){
         animation-delay: 150ms * $i;
         }

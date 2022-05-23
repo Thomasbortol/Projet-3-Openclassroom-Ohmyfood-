@@ -82,8 +82,8 @@
   color: white;
   padding: 15px 30px 15px 30px;
   border-radius: 25px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--secondaire)), to(var(--primaire)));
+  background-image: linear-gradient(to bottom, var(--secondaire), var(--primaire));
   -webkit-transition: all 200ms;
   transition: all 200ms;
   -webkit-box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
