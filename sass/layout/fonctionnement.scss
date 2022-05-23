@@ -17,14 +17,20 @@
         list-style-type: none;
         font-weight: bold;
         @include shadowbase;
+        cursor: pointer;
+        &:hover{
+            background-color:rgba(147, 86, 220, 0.2);
+            transform: scale(1.02);
+            i{
+            color: #9356DC;
+            }
+        }
     }
     & i{
         margin-right: 10px;
         color: gray;
-        &:hover{
-            color: #9356DC; /* Pas bon ici hover QUE sur l'image */
         }
-    }
+    
     & .list{
         background-color: #9356DC;
         color: white;

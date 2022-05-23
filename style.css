@@ -379,16 +379,22 @@ header h1 {
   font-weight: bold;
   -webkit-box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
           box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
+  cursor: pointer;
+}
+
+.fonctionnement li:hover {
+  background-color: rgba(147, 86, 220, 0.2);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.fonctionnement li:hover i {
+  color: #9356DC;
 }
 
 .fonctionnement i {
   margin-right: 10px;
   color: gray;
-}
-
-.fonctionnement i:hover {
-  color: #9356DC;
-  /* Pas bon ici hover QUE sur l'image */
 }
 
 .fonctionnement .list {
