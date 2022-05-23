@@ -11,3 +11,86 @@
     font-size: x-large;
 }
 }
+
+
+
+.loadspin {
+	position: fixed;
+	background-color: white;
+	height: 100vh;
+	inset: 0;
+	z-index: 1;
+	opacity: 0.9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	animation: disparition 200ms;
+	animation-delay: 3s;
+	animation-fill-mode: both;
+	transform-origin: top;
+}
+.lds-grid {
+	display: inline-block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+	div {
+		position: absolute;
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		background: #ff79da;
+		animation: lds-grid 1.2s linear infinite;
+		&:nth-child(1) {
+			top: 8px;
+			left: 8px;
+			animation-delay: 0s;
+			background: #99e2d0;
+		}
+		&:nth-child(2) {
+			top: 8px;
+			left: 32px;
+			animation-delay: -0.4s;
+			background: #9356dc;
+		}
+		&:nth-child(3) {
+			top: 8px;
+			left: 56px;
+			animation-delay: -0.8s;
+		}
+		&:nth-child(4) {
+			top: 32px;
+			left: 8px;
+			animation-delay: -0.4s;
+			background: #99e2d0;
+		}
+		&:nth-child(5) {
+			top: 32px;
+			left: 32px;
+			animation-delay: -0.8s;
+			background: #9356dc;
+		}
+		&:nth-child(6) {
+			top: 32px;
+			left: 56px;
+			animation-delay: -1.2s;
+		}
+		&:nth-child(7) {
+			top: 56px;
+			left: 8px;
+			animation-delay: -0.8s;
+			background: #99e2d0;
+		}
+		&:nth-child(8) {
+			top: 56px;
+			left: 32px;
+			animation-delay: -1.2s;
+			background: #9356dc;
+		}
+		&:nth-child(9) {
+			top: 56px;
+			left: 56px;
+			animation-delay: -1.6s;
+		}
+	}
+}
