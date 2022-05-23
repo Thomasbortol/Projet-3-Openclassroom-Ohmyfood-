@@ -27,7 +27,7 @@
         @include shadowbase;
         cursor: pointer;
         &:hover{
-            background-color:rgba(147, 86, 220, 0.2);
+            background-color: lighten(#9356dc, 35%);
             transform: scale(1.02);
             i{
             color: #9356DC;

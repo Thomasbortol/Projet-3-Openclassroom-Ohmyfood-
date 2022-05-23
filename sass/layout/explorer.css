@@ -24,6 +24,46 @@
   }
 }
 
+@-webkit-keyframes disparition {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes disparition {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes lds-grid {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes lds-grid {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
 .section1 {
   background-color: #f2f2f2;
 }
@@ -31,6 +71,10 @@
 .explorer {
   text-align: center;
   padding-bottom: 20px;
+}
+
+.explorer h2 {
+  padding-top: 10px;
 }
 
 .explorer button {

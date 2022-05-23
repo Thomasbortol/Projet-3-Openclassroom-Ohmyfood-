@@ -108,7 +108,7 @@
 }
 
 .fonctionnement li:hover {
-  background-color: rgba(147, 86, 220, 0.2);
+  background-color: #f2eafb;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }

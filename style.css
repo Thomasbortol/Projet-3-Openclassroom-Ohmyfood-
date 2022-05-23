@@ -300,6 +300,10 @@ header h1 {
   padding-bottom: 20px;
 }
 
+.explorer h2 {
+  padding-top: 10px;
+}
+
 .explorer button {
   border: none;
   color: white;
@@ -401,7 +405,7 @@ header h1 {
 }
 
 .fonctionnement li:hover {
-  background-color: rgba(147, 86, 220, 0.2);
+  background-color: #f2eafb;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
 }

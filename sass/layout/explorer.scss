@@ -6,6 +6,9 @@
 .explorer{
     text-align: center;
     padding-bottom: 20px;
+    & h2{
+    padding-top: 10px;
+    }
     & button{
     border: none;
     color: white;
