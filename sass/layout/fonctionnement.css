@@ -64,6 +64,12 @@
   }
 }
 
+@media (max-width: 860px) {
+  .fonctionnement h2 {
+    margin-left: 15px;
+  }
+}
+
 .fonctionnement ol {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,6 +99,12 @@
   -webkit-box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
           box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
   cursor: pointer;
+}
+
+@media (max-width: 860px) {
+  .fonctionnement li {
+    margin-right: 20px;
+  }
 }
 
 .fonctionnement li:hover {

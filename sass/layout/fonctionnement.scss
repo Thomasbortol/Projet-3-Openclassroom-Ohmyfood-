@@ -1,6 +1,11 @@
 @import "../utils/mixins.scss";
 
 .fonctionnement{
+    & h2{
+        @media (max-width: 860px) {
+            margin-left: 15px;
+    }
+    }
     & ol{
         display: flex;
         gap: 20px;
@@ -16,6 +21,9 @@
         border-radius: 15px;
         list-style-type: none;
         font-weight: bold;
+        @media (max-width: 860px) {
+            margin-right: 20px;
+    }
         @include shadowbase;
         cursor: pointer;
         &:hover{

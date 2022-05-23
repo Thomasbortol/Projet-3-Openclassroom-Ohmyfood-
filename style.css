@@ -15,6 +15,12 @@ main {
   padding: 0px 15px;
 }
 
+@media (max-width: 860px) {
+  main {
+    padding: 0px;
+  }
+}
+
 h3 {
   margin: 0;
 }
@@ -351,6 +357,12 @@ header h1 {
   }
 }
 
+@media (max-width: 860px) {
+  .fonctionnement h2 {
+    margin-left: 15px;
+  }
+}
+
 .fonctionnement ol {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -380,6 +392,12 @@ header h1 {
   -webkit-box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
           box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
   cursor: pointer;
+}
+
+@media (max-width: 860px) {
+  .fonctionnement li {
+    margin-right: 20px;
+  }
 }
 
 .fonctionnement li:hover {
@@ -463,6 +481,8 @@ header h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media (max-width: 860px) {

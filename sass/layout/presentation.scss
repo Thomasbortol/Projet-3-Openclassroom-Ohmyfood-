@@ -8,9 +8,10 @@
 
 & .restaurant{
     display: flex;
+    flex-wrap: wrap;
     @media (max-width: 860px) {
         flex-direction: column;
-}
+    }
     }
 & .presentation{
     border-radius: 23px;
@@ -22,7 +23,7 @@
     @include shadowbase;
     @media (max-width: 860px) {
         width: auto;
-}
+    }
     }
 & .nouveau{
     position: relative;
