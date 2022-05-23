@@ -64,6 +64,12 @@
   }
 }
 
+:root {
+  --primaire: #9356dc;
+  --secondaire: #ff79da;
+  --tertiaire: #99e2d0;
+}
+
 .paris {
   background-color: #f2f2f2;
   display: -webkit-box;
@@ -121,7 +127,7 @@
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #ff79da;
+  background: var(--secondaire);
   -webkit-animation: lds-grid 1.2s linear infinite;
           animation: lds-grid 1.2s linear infinite;
 }
@@ -131,7 +137,7 @@
   left: 8px;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
-  background: #99e2d0;
+  background: var(--tertiaire);
 }
 
 .lds-grid div:nth-child(2) {
@@ -139,7 +145,7 @@
   left: 32px;
   -webkit-animation-delay: -0.4s;
           animation-delay: -0.4s;
-  background: #9356dc;
+  background: var(--primaire);
 }
 
 .lds-grid div:nth-child(3) {
@@ -154,7 +160,7 @@
   left: 8px;
   -webkit-animation-delay: -0.4s;
           animation-delay: -0.4s;
-  background: #99e2d0;
+  background: var(--tertiaire);
 }
 
 .lds-grid div:nth-child(5) {
@@ -162,7 +168,7 @@
   left: 32px;
   -webkit-animation-delay: -0.8s;
           animation-delay: -0.8s;
-  background: #9356dc;
+  background: var(--primaire);
 }
 
 .lds-grid div:nth-child(6) {
@@ -177,7 +183,7 @@
   left: 8px;
   -webkit-animation-delay: -0.8s;
           animation-delay: -0.8s;
-  background: #99e2d0;
+  background: var(--tertiaire);
 }
 
 .lds-grid div:nth-child(8) {
@@ -185,7 +191,7 @@
   left: 32px;
   -webkit-animation-delay: -1.2s;
           animation-delay: -1.2s;
-  background: #9356dc;
+  background: var(--primaire);
 }
 
 .lds-grid div:nth-child(9) {

@@ -64,6 +64,12 @@
   }
 }
 
+:root {
+  --primaire: #9356dc;
+  --secondaire: #ff79da;
+  --tertiaire: #99e2d0;
+}
+
 #bodyrestaurant {
   background-color: #f2f2f2;
 }
@@ -109,8 +115,8 @@
   right: 0px;
   top: 0px;
   color: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--secondaire)), to(var(--primaire)));
+  background-image: linear-gradient(to bottom, var(--secondaire), var(--primaire));
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
@@ -164,7 +170,7 @@
 .menus-restaurant .repas h3::after {
   content: "";
   position: absolute;
-  background-color: #99e2d0;
+  background-color: var(--tertiaire);
   height: 3px;
   width: 50px;
   top: 25px;
@@ -195,23 +201,23 @@
 }
 
 .menus-restaurant .repas .plat:nth-child(1) {
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
 }
 
 .menus-restaurant .repas .plat:nth-child(2) {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
-}
-
-.menus-restaurant .repas .plat:nth-child(3) {
   -webkit-animation-delay: 300ms;
           animation-delay: 300ms;
 }
 
+.menus-restaurant .repas .plat:nth-child(3) {
+  -webkit-animation-delay: 450ms;
+          animation-delay: 450ms;
+}
+
 .menus-restaurant .repas .plat:nth-child(4) {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 
 .menus-restaurant .repas .plat .unique {
@@ -233,7 +239,7 @@
 }
 
 .menus-restaurant .repas .plat .check {
-  background-color: #99e2d0;
+  background-color: var(--tertiaire);
   color: white;
   padding: 20px;
   border-radius: 0 15px 15px 0;
@@ -288,8 +294,8 @@
   color: white;
   padding: 15px 30px 15px 30px;
   border-radius: 25px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--secondaire)), to(var(--primaire)));
+  background-image: linear-gradient(to bottom, var(--secondaire), var(--primaire));
   -webkit-transition: all 200ms;
   transition: all 200ms;
   -webkit-box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);

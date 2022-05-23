@@ -1,4 +1,5 @@
 @import "../utils/mixins.scss";
+@import "../utils/variables.scss";
 
 .paris{
     @include greybackcolor;
@@ -39,19 +40,19 @@
 		width: 16px;
 		height: 16px;
 		border-radius: 50%;
-		background: #ff79da;
+		background: var(--secondaire);
 		animation: lds-grid 1.2s linear infinite;
 		&:nth-child(1) {
 			top: 8px;
 			left: 8px;
 			animation-delay: 0s;
-			background: #99e2d0;
+			background: var(--tertiaire);
 		}
 		&:nth-child(2) {
 			top: 8px;
 			left: 32px;
 			animation-delay: -0.4s;
-			background: #9356dc;
+			background: var(--primaire);
 		}
 		&:nth-child(3) {
 			top: 8px;
@@ -62,13 +63,13 @@
 			top: 32px;
 			left: 8px;
 			animation-delay: -0.4s;
-			background: #99e2d0;
+			background: var(--tertiaire);
 		}
 		&:nth-child(5) {
 			top: 32px;
 			left: 32px;
 			animation-delay: -0.8s;
-			background: #9356dc;
+			background: var(--primaire);
 		}
 		&:nth-child(6) {
 			top: 32px;
@@ -79,13 +80,13 @@
 			top: 56px;
 			left: 8px;
 			animation-delay: -0.8s;
-			background: #99e2d0;
+			background: var(--tertiaire);
 		}
 		&:nth-child(8) {
 			top: 56px;
 			left: 32px;
 			animation-delay: -1.2s;
-			background: #9356dc;
+			background: var(--primaire);
 		}
 		&:nth-child(9) {
 			top: 56px;

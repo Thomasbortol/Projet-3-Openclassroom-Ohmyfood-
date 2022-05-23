@@ -64,6 +64,10 @@
   }
 }
 
+:root {
+  --primaire: #9356dc;
+}
+
 @media (max-width: 860px) {
   .fonctionnement h2 {
     margin-left: 15px;
@@ -114,7 +118,7 @@
 }
 
 .fonctionnement li:hover i {
-  color: #9356DC;
+  color: var(--primaire);
 }
 
 .fonctionnement i {
@@ -123,7 +127,7 @@
 }
 
 .fonctionnement .list {
-  background-color: #9356DC;
+  background-color: var(--primaire);
   color: white;
   width: 20px;
   height: 20px;

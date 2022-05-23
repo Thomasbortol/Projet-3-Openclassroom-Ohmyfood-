@@ -1,4 +1,5 @@
 @import "../utils/mixins.scss";
+@import "../utils/variables.scss";
 
 #bodyrestaurant{
     @include greybackcolor;
@@ -77,7 +78,7 @@
         &::after{
             content: "";
             position: absolute;
-            background-color: #99e2d0;
+            background-color: var(--tertiaire);
             height: 3px;
             width: 50px;
             top: 25px;
@@ -87,7 +88,7 @@
         & .plat{
         @for $i from 1 through 4{
         &:nth-child(#{$i}){
-        animation-delay: 100ms * $i;
+        animation-delay: 150ms * $i;
         }
         }
         background-color: white;
@@ -117,7 +118,7 @@
             padding: 0 10px 10px 10px;
             }
             & .check{
-                background-color: #99e2d0;
+                background-color: var(--tertiaire);
                 color: white;
                 padding: 20px;
                 border-radius: 0 15px 15px 0;

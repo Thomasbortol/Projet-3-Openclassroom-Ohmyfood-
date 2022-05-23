@@ -127,6 +127,12 @@ header h1 {
   }
 }
 
+:root {
+  --primaire: #9356dc;
+  --secondaire: #ff79da;
+  --tertiaire: #99e2d0;
+}
+
 .paris {
   background-color: #f2f2f2;
   display: -webkit-box;
@@ -184,7 +190,7 @@ header h1 {
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: #ff79da;
+  background: var(--secondaire);
   -webkit-animation: lds-grid 1.2s linear infinite;
           animation: lds-grid 1.2s linear infinite;
 }
@@ -194,7 +200,7 @@ header h1 {
   left: 8px;
   -webkit-animation-delay: 0s;
           animation-delay: 0s;
-  background: #99e2d0;
+  background: var(--tertiaire);
 }
 
 .lds-grid div:nth-child(2) {
@@ -202,7 +208,7 @@ header h1 {
   left: 32px;
   -webkit-animation-delay: -0.4s;
           animation-delay: -0.4s;
-  background: #9356dc;
+  background: var(--primaire);
 }
 
 .lds-grid div:nth-child(3) {
@@ -217,7 +223,7 @@ header h1 {
   left: 8px;
   -webkit-animation-delay: -0.4s;
           animation-delay: -0.4s;
-  background: #99e2d0;
+  background: var(--tertiaire);
 }
 
 .lds-grid div:nth-child(5) {
@@ -225,7 +231,7 @@ header h1 {
   left: 32px;
   -webkit-animation-delay: -0.8s;
           animation-delay: -0.8s;
-  background: #9356dc;
+  background: var(--primaire);
 }
 
 .lds-grid div:nth-child(6) {
@@ -240,7 +246,7 @@ header h1 {
   left: 8px;
   -webkit-animation-delay: -0.8s;
           animation-delay: -0.8s;
-  background: #99e2d0;
+  background: var(--tertiaire);
 }
 
 .lds-grid div:nth-child(8) {
@@ -248,7 +254,7 @@ header h1 {
   left: 32px;
   -webkit-animation-delay: -1.2s;
           animation-delay: -1.2s;
-  background: #9356dc;
+  background: var(--primaire);
 }
 
 .lds-grid div:nth-child(9) {
@@ -309,8 +315,8 @@ header h1 {
   color: white;
   padding: 15px 30px 15px 30px;
   border-radius: 25px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--secondaire)), to(var(--primaire)));
+  background-image: linear-gradient(to bottom, var(--secondaire), var(--primaire));
   -webkit-transition: all 200ms;
   transition: all 200ms;
   -webkit-box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
@@ -359,6 +365,12 @@ header h1 {
   50% {
     opacity: 0.5;
   }
+}
+
+:root {
+  --primaire: #9356dc;
+  --secondaire: #ff79da;
+  --tertiaire: #99e2d0;
 }
 
 @media (max-width: 860px) {
@@ -411,7 +423,7 @@ header h1 {
 }
 
 .fonctionnement li:hover i {
-  color: #9356DC;
+  color: var(--primaire);
 }
 
 .fonctionnement i {
@@ -420,7 +432,7 @@ header h1 {
 }
 
 .fonctionnement .list {
-  background-color: #9356DC;
+  background-color: var(--primaire);
   color: white;
   width: 20px;
   height: 20px;
@@ -527,7 +539,7 @@ header h1 {
   position: absolute;
   height: 25px;
   width: 80px;
-  background-color: #99E2D0;
+  background-color: var(--tertiaire);
   color: #1b6150;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -579,8 +591,8 @@ header h1 {
   right: 0px;
   top: 1px;
   color: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--secondaire)), to(var(--primaire)));
+  background-image: linear-gradient(to bottom, var(--secondaire), var(--primaire));
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
@@ -651,6 +663,12 @@ footer i {
   }
 }
 
+:root {
+  --primaire: #9356dc;
+  --secondaire: #ff79da;
+  --tertiaire: #99e2d0;
+}
+
 #bodyrestaurant {
   background-color: #f2f2f2;
 }
@@ -696,8 +714,8 @@ footer i {
   right: 0px;
   top: 0px;
   color: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--secondaire)), to(var(--primaire)));
+  background-image: linear-gradient(to bottom, var(--secondaire), var(--primaire));
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
@@ -751,7 +769,7 @@ footer i {
 .menus-restaurant .repas h3::after {
   content: "";
   position: absolute;
-  background-color: #99e2d0;
+  background-color: var(--tertiaire);
   height: 3px;
   width: 50px;
   top: 25px;
@@ -782,23 +800,23 @@ footer i {
 }
 
 .menus-restaurant .repas .plat:nth-child(1) {
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms;
 }
 
 .menus-restaurant .repas .plat:nth-child(2) {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
-}
-
-.menus-restaurant .repas .plat:nth-child(3) {
   -webkit-animation-delay: 300ms;
           animation-delay: 300ms;
 }
 
+.menus-restaurant .repas .plat:nth-child(3) {
+  -webkit-animation-delay: 450ms;
+          animation-delay: 450ms;
+}
+
 .menus-restaurant .repas .plat:nth-child(4) {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 
 .menus-restaurant .repas .plat .unique {
@@ -820,7 +838,7 @@ footer i {
 }
 
 .menus-restaurant .repas .plat .check {
-  background-color: #99e2d0;
+  background-color: var(--tertiaire);
   color: white;
   padding: 20px;
   border-radius: 0 15px 15px 0;
@@ -875,8 +893,8 @@ footer i {
   color: white;
   padding: 15px 30px 15px 30px;
   border-radius: 25px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff79da), to(#9356dc));
-  background-image: linear-gradient(to bottom, #ff79da, #9356dc);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--secondaire)), to(var(--primaire)));
+  background-image: linear-gradient(to bottom, var(--secondaire), var(--primaire));
   -webkit-transition: all 200ms;
   transition: all 200ms;
   -webkit-box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
