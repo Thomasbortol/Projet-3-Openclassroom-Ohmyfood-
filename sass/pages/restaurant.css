@@ -305,6 +305,10 @@
   transition: all 200ms;
   -webkit-box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
           box-shadow: 4px 4px 10px 0px rgba(132, 132, 132, 0.67);
+  -webkit-transition: -webkit-box-shadow 0.3s ease-out;
+  transition: -webkit-box-shadow 0.3s ease-out;
+  transition: box-shadow 0.3s ease-out;
+  transition: box-shadow 0.3s ease-out, -webkit-box-shadow 0.3s ease-out;
   cursor: pointer;
 }
 
@@ -312,5 +316,7 @@
   opacity: 0.8;
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+  -webkit-box-shadow: 4px 4px 15px 4px rgba(132, 132, 132, 0.8);
+          box-shadow: 4px 4px 15px 4px rgba(132, 132, 132, 0.8);
 }
 /*# sourceMappingURL=restaurant.css.map */

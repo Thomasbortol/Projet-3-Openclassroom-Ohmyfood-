@@ -154,11 +154,13 @@
     @include gradient;
     transition: all 200ms;
     @include shadowbase;
+    transition: box-shadow 0.3s ease-out;
     cursor: pointer;
 }
 & button:hover{
     opacity: 0.8;
     transform: scale(1.02);
+    box-shadow: 4px 4px 15px 4px rgba(132,132,132,0.8);
 }
 }
 
