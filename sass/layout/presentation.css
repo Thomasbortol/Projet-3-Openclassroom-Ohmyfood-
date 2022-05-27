@@ -108,6 +108,11 @@
   }
 }
 
+.section3 .presentation:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
 .section3 .nouveau {
   position: relative;
 }

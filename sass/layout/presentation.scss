@@ -24,6 +24,9 @@
     @media (max-width: 860px) {
         width: auto;
     }
+    &:hover{
+        transform: scale(1.02);
+    }
     }
 & .nouveau{
     position: relative;
